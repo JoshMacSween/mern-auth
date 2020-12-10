@@ -3,6 +3,7 @@ import './App.css'
 import Login from './components/auth/Login'
 import Register from './components/auth/Register'
 import Home from './components/pages/Home'
+import Header from './components/layout/Header'
 import {
   BrowserRouter,
   BrowserRouter as Router,
@@ -12,6 +13,7 @@ import {
 function App() {
   return (
     <BrowserRouter>
+      <Header />
       <Switch>
         <Route path="/" component={Home} exact/>
         <Route path="/login" component={Login} />
